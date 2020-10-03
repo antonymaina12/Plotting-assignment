@@ -1,3 +1,4 @@
+png("plot4.png", 480, 480)
 par(mfrow = c(2,2), mar = c(4,4,2,1), oma = c(0,0,0,0))
 
 plot(power1$Global_active_power~power1$dateTime, type="l", 
@@ -16,3 +17,4 @@ legend("topright",col = c("black","red","blue"),
        pch = "_",lty = 1)
 plot(power1$Global_reactive_power~power1$dateTime, type = "l", 
      ylab = "Global_reactive_power",xlab = "")
+dev.off()
